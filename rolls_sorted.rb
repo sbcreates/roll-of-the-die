@@ -6,7 +6,4 @@ puts "Type 'roll' then enter to roll the dice"
 
 user_roll = gets.to_s
 
-10.times do |result|
-  result = random_six(user_roll)
-  p result
-end
+result = [random_six(user_roll)]
