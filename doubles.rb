@@ -6,21 +6,21 @@ puts "Type 'roll' then enter to roll the dice"
 
 user_roll = gets.to_s
 
-roll_result = []
-5.times do
+roll = []
+
+2.times do
   result = random_six(user_roll)
-  roll_result << result
+  roll << result
 end
 
-roll_result.sort!
+sums = 0
+roll.each do |num|
+  sums += num
+end
+roll << sums
 
-roll_result.each do |num|
-  p "The result of your roll is #{num}."
+p "You rolled a #{roll[0]} and #{roll[1]}"
+if roll [0] == roll [1]
+  p "Doubles!"
 end
-
-if roll_result.first
-  p "The lowest number is 2."
-end
-if roll_result.last
-  p "The highest number is 6."
-end
+p "Your total is #{roll[2]}"
