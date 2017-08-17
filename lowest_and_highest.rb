@@ -7,7 +7,7 @@ puts "Type 'roll' then enter to roll the dice"
 user_roll = gets.to_s
 
 roll_result = []
-10.times do
+5.times do
   result = random_six(user_roll)
   roll_result << result
 end
