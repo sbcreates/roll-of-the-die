@@ -15,5 +15,12 @@ end
 roll_result.sort!
 
 roll_result.each do |num|
-  p "The result of your roll is #{num}"
+  p "The result of your roll is #{num}."
+end
+
+if roll_result.first
+  p "The lowest number is 2."
+end
+if roll_result.last
+  p "The highest number is 6."
 end
